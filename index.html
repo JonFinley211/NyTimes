@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NY Times</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- ICON -->
+    <script src="https://kit.fontawesome.com/a2cbb46ec8.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron text-center bg-custom text-white">
+            <h1><i class="fas fa-newspaper"></i> New York Times Search</h1>
+        </div>
+
+        <!-- Search Form -->
+        <div class="card my-5">
+            <div class="card-header">
+                Search Parameters
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="search-term">Search Term:</label>
+                        <input class="form-control" type="text" id="search-term">
+                    </div>
+                    <div class="form-group">
+                        <label for="record-number">Number of record to retrieve?</label>
+                        <select class="form-control" id="record-number">
+                            <option>5</option>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>20</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="start-year">Start Year (optional):</label>
+                        <input class="form-control" type="text" id="start-year">
+                    </div>
+                    <div class="form-group">
+                        <label for="end-year">End Year (optional):</label>
+                        <input class="form-control" type="text" id="end-year">
+                    </div>
+                    <button class="btn" id="search-btn"><i class="fas fa-search"></i> Search</button>
+                    <button class="btn" id="empty-btn"><i class="fas fa-trash-alt"></i> Clear Results</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- TOP ARTICLES -->
+        <div class="card mb-5">
+            <div class="card-header">
+                    <i class="far fa-newspaper"></i> Top Articles
+            </div>
+            <div class="card-body">
+                <div id="top-articles"></div>
+            </div>
+        </div>
+
+    <!-- END of container -->
+    </div>
+
+<!-- BOOTSTRAP AND JQUERY -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- CUSTOM JS -->
+<script src="nytimes.js"></script>
+</body>
+</html>
